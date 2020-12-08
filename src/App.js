@@ -2,17 +2,15 @@ import React ,{useState}from 'react';
 import ReactDOM from 'react-dom';
 
 const App = ()=>{
- const [user,setUser] = useState({name:"richard",age:18})
+ const [n,setN] = useState(0)
     const onClick = ()=>{
-     setUser({
-         ...user,
-         name: "Jack"
-     })
+        setN(n+1)
+        setN(n+1)
+
     }
     return(
         <div className="App">
-            <h1>{user.name}</h1>
-            <h2>{user.age}</h2>
+            <h1>n：{n}</h1>
             <button onClick={onClick}>Click</button>
         </div>
     )
