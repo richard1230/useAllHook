@@ -8,10 +8,15 @@ const App = () => {
     const onClick = () => {
         setN(n + 1);
     };
+    const onClick2 = () => {
+        setM(m=>m + 1);
+    };
     return (
         <div className="App">
             <div>
                 <button onClick={onClick}>update n {n}</button>
+                <button onClick={onClick2}>update m {m}</button>
+
             </div>
             {/*<Child data={m}/>*/}
              <Child2 data={m}/>
