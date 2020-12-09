@@ -13,8 +13,8 @@ const App = () => {
             <div>
                 <button onClick={onClick}>update n {n}</button>
             </div>
-            <Child data={m}/>
-             {/*<Child2 data={m}/> */}
+            {/*<Child data={m}/>*/}
+             <Child2 data={m}/>
         </div>
     )
 
